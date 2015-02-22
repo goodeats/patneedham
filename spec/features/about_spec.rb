@@ -27,7 +27,6 @@ RSpec.feature 'Display my name and page header' do
 
     click_link('back')
     expect(current_path).to eq root_path
-
   end
 
 

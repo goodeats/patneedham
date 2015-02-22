@@ -9,6 +9,8 @@ RSpec.feature 'Display my name and page header' do
 
     expect(page).to have_content 'Pat Needham'
     expect(page).to have_selector 'h1', 1
+    expect(page).to have_selector 'h3'
+    expect(page).to have_selector 'p'
   end
 
   scenario "Show my link titles" do
@@ -25,7 +27,6 @@ RSpec.feature 'Display my name and page header' do
 
     click_link('back')
     expect(current_path).to eq root_path
-
   end
 
 

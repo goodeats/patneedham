@@ -47,7 +47,6 @@ RSpec.feature 'Test links' do
 
     click_link('blog')
     expect(current_path).to eq blog_index_path
-
   end
 
 end
