@@ -5,19 +5,17 @@ require 'rails_helper'
 RSpec.feature 'Display my name and page header' do
   scenario "Show 'Pat Needham' in an h1 tag" do
 
-    visit '/about'
+    visit '/work'
 
     expect(page).to have_content 'Pat Needham'
     expect(page).to have_selector 'h1', 1
-    expect(page).to have_selector 'h3', 3
-    expect(page).to have_selector 'p', 3
   end
 
   scenario "Show my link titles" do
 
-    visit '/about'
+    visit '/work'
 
-    expect(page).to have_content 'about me'
+    expect(page).to have_content 'my work'
     expect(page).to have_selector 'h2', 1
   end
 
@@ -29,6 +27,7 @@ RSpec.feature 'Display my name and page header' do
     expect(current_path).to eq root_path
 
   end
+
 
 
 

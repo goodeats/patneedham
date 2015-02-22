@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe AboutController do
+RSpec.describe BlogController do
 
   describe 'GET index' do
     it 'has a 200 status code' do
