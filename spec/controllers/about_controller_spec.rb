@@ -13,6 +13,12 @@ RSpec.describe AboutController do
       expect(response).to render_template('index')
     end
 
+    it "sample test" do
+      get :index
+      click_link "back"
+      assert_redirected_to "/"
+    end
+
   end
 
 
