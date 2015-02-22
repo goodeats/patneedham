@@ -18,7 +18,7 @@ RSpec.feature 'Display my name' do
     expect(page).to have_content 'about me'
     expect(page).to have_content 'my work'
     expect(page).to have_content 'blog'
-    expect(page).to have_selector 'div', 3
+    expect(page).to have_selector 'div > h2', 3
   end
 
 end
