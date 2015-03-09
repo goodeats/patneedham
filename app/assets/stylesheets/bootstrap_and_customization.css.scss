@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 $body-bg:                 #ecf0f1;
 $font-family-sans-serif:  'Lato', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,                       Arial, "Lucida Grande", sans-serif;
@@ -15,4 +16,38 @@ left-split {
   height: 100px;
   width: 100px;
   background-color: red;
+}
+
+.page-header {
+  margin-top: 80px;
+}
+
+.big_logo {
+  position: absolute;
+  width: 100%;
+}
+
+#bigP h1 {
+  margin: 11px 0 0 30px;
+  font-size: 20px;
+  z-index: -10;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#bigBulb i {
+  position: absolute;
+  margin: 5px 0 0 25.5px;
+  font-size: 40px;
+}
+
+#bigBulb h1 {
+  position: absolute;
+  margin: 0 0 0 50px;
+  font-size: 40px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 50px;
 }
